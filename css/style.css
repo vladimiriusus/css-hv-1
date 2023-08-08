@@ -1,0 +1,177 @@
+:root {
+  --primery-text-color: rgba(33, 33, 33, 1);
+  --title-text-color: rgba(117, 117, 117, 1);
+  --accent-color: rgba(33, 150, 243, 1);
+  --bacgrund-color: rgba(245, 244, 250, 1);
+  --second-text-color: rgba(117, 117, 117, 1);
+  --wite-text-color: rgba(255, 255, 255, 1);
+  --primery-bg-color: rgba(245, 244, 250, 1);
+}
+body {
+  background-color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.03em;
+
+  /* цвет основного текста rgba(33, 33, 33, 1) */
+  /*  вторичный текст rgba(117, 117, 117, 1) */
+  /* белый rgba(255, 255, 255, 1) */
+  /* акцент rgba(33, 150, 243, 1)
+*/
+  /* вторичный фон цвет rgba(245, 244, 250, 1)
+*/
+
+  font-family: "Raleway", "Roboto", "Oleo Script", sans-serif;
+  color: var(--primery-text-color);
+  line-height: 1.2;
+}
+.logo {
+  color: var(--primery-text-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+.logo span {
+  color: var(--accent-color);
+
+  font-size: 26px;
+  line-height: 1.36px;
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+.futter-logo {
+  color: var(--wite-text-color);
+}
+.futter-logo span {
+  color: var(--accent-color);
+}
+.futter-logo:hover {
+  color: var(--accent-color);
+}
+.nav,
+.contakts {
+  color: var(--primery-text-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-text:hover,
+.nav-text:focus {
+  color: var(--accent-color);
+}
+
+.mail {
+  color: rgba(117, 117, 117, 1);
+}
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+.tel {
+  color: var(--second-text-color);
+}
+.tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+}
+.btn {
+  color: var(--wite-text-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.link-content {
+  background-color: rgba(47, 48, 58, 1);
+}
+.link-content.text {
+  color: #ffffff;
+}
+.futter-contacts a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.futter-contacts a:hover,
+.futter-contacts a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+a {
+  size: 44px;
+}
+.button {
+  color: var(--primery-text-color);
+  background-color: var(--primery-bg-color);
+  font-family: inherit;
+}
+.button.ptimery:hover,
+.button.ptimery:focus {
+  background-color: var(--accent-color);
+  color: var(--wite-text-color);
+}
+a {
+  text-decoration: none;
+}
+.link-content text {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+h3.list-content {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+}
+ul.list {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.content-picters h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+}
+.content-picters p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+}
+ul.futter-contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.page-header.nav {
+  cursor: pointer;
+}
+
+.nav-links {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.content h3 {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 2px;
+  letter-spacing: 0.06em;
+}
+.content p {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.9px;
+}
