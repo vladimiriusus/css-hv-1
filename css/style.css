@@ -7,9 +7,9 @@
   --wite-text-color: rgba(255, 255, 255, 1);
   --primery-bg-color: rgba(245, 244, 250, 1);
 }
+
 body {
   background-color: rgba(255, 255, 255, 1);
-  letter-spacing: 0.03em;
 
   /* цвет основного текста rgba(33, 33, 33, 1) */
   /*  вторичный текст rgba(117, 117, 117, 1) */
@@ -22,8 +22,10 @@ body {
   font-family: "Roboto", "Raleway", "Oleo Script", sans-serif;
   color: var(--primery-text-color);
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .logo {
+  font-family: "Raleway", sans-serif;
   color: var(--primery-text-color);
   font-size: 26px;
   font-weight: 700;
@@ -61,7 +63,9 @@ body {
 .nav-text:focus {
   color: var(--accent-color);
 }
-
+.nav-text.current {
+  color: var(--accent-color);
+}
 .mail {
   color: rgba(117, 117, 117, 1);
 }
@@ -83,6 +87,10 @@ body {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border: none;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
 }
 .link-content {
   background-color: rgba(47, 48, 58, 1);
@@ -135,10 +143,19 @@ h3.list-content {
   line-height: 24px;
 }
 ul.list {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1, 7;
+}
+.content-img {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.content-picters {
+  background-color: var(--bacgrund-color);
 }
 .content-picters.name {
   font-size: 36px;
@@ -156,12 +173,7 @@ ul.list {
   font-weight: 400;
   line-height: 1.19;
 }
-ul.futter-contacts {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
-  list-style-type: none;
-}
+
 .page-header.nav {
   cursor: pointer;
 }
@@ -174,7 +186,6 @@ ul.futter-contacts {
 }
 
 .content h3 {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2px;
@@ -182,7 +193,6 @@ ul.futter-contacts {
 }
 .content p {
   color: rgba(117, 117, 117, 1);
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.9px;
 }
@@ -192,4 +202,24 @@ ul {
 .content-nav img {
   width: 370px;
   height: 294px;
+}
+.futter {
+  font-family: "Roboto", sans-serif;
+}
+.futter-logo {
+  font-family: "Raleway", sans-serif;
+  color: var(-wite-text-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+}
+ul.futter-contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  list-style-type: none;
+  font-style: normal;
+}
+.section {
+  background-color: var(--wite-text-color);
 }
