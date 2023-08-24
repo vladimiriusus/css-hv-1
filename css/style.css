@@ -24,6 +24,9 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+a.link:visited {
+  color: var(--primery-text-color);
+}
 .logo {
   font-family: "Raleway", sans-serif;
   color: var(--primery-text-color);
