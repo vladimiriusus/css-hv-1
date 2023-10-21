@@ -6,6 +6,18 @@
   --second-text-color: rgba(117, 117, 117, 1);
   --wite-text-color: rgba(255, 255, 255, 1);
   --primery-bg-color: rgba(245, 244, 250, 1);
+  --grey-background-color: rgba(47, 48, 58, 1);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -23,6 +35,9 @@ body {
   color: var(--primery-text-color);
   line-height: 1.2;
   letter-spacing: 0.03em;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 a.link:visited {
   color: var(--primery-text-color);
@@ -55,15 +70,26 @@ a.link:visited {
 }
 .nav,
 .contakts {
+display: flex;
   color: var(--primery-text-color);
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
 }
 ul.contakts {
   margin: 0;
+  
+}
+.contakts-item{
+	display: flex;
+	margin-left: auto;
+}
+.main-nav{
+	display: flex;
+	align-items: center;
 }
 .nav-text:hover,
 .nav-text:focus {
@@ -72,12 +98,24 @@ ul.contakts {
 .nav-text.current {
   color: var(--accent-color);
 }
+.nav{
+	display: flex;
+	margin-left: 93px;
+	align-items: center;
+}
+.nav li:not(:last-child){
+	
+margin-right: 50px;
+}
 .mail {
   color: rgba(117, 117, 117, 1);
 }
 .mail:hover,
 .mail:focus {
   color: var(--accent-color);
+}
+.contakts-item .mail{
+	margin-right: 50px;
 }
 .tel {
   color: var(--second-text-color);
@@ -86,8 +124,7 @@ ul.contakts {
 .tel:focus {
   color: var(--accent-color);
 }
-a.btn {
-  display: inline-block;
+.hero-btn {
   color: var(--wite-text-color);
   background-color: var(--accent-color);
   font-size: 16px;
@@ -98,8 +135,9 @@ a.btn {
   min-width: 216px;
   height: 50px;
   border-radius: 4px;
-  border: 1px solid transparent;
   padding: 10px 32px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .link-content {
@@ -108,15 +146,7 @@ a.btn {
   max-height: 600px;
   background-color: rgba(47, 48, 58, 1);
 }
-.link-content.text {
-  color: #ffffff;
-}
-.text {
-  padding-top: 200px;
-}
-h1.link-content.text {
-  margin: 0;
-}
+
 .futter-contacts a {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -126,6 +156,9 @@ h1.link-content.text {
 }
 footer {
   background-color: rgba(47, 48, 58, 1);
+}
+.futter-contacts li{
+	padding-bottom: 9px;
 }
 a {
   size: 44px;
@@ -167,7 +200,9 @@ ul.list {
   line-height: 1, 7;
   margin: 0;
 }
+
 .content-img {
+	margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -177,10 +212,14 @@ ul.list {
 .content-picters {
   background-color: var(--bacgrund-color);
 }
+.content-picters .name{
+	padding-bottom: 50px;
+}
 .content-picters p {
   margin: 0;
 }
 .content-picters.name {
+	padding-top: 94px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -204,8 +243,18 @@ ul.list {
 .page-header.nav {
   cursor: pointer;
 }
+.page-header .container{
+	padding-top: 24px;
+	padding-bottom: 25px;
+
+
+}
+.nav .link{
+	display: block;
+}
 
 .nav-links {
+
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -226,6 +275,24 @@ ul.list {
 ul {
   list-style-type: none;
 }
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+	
+}
+ul.list{
+	margin-bottom: 94px;
+}
+.list li{
+	margin: 15px;
+}
+.list .item{
+	outline: 2px solid tomato;
+	width: 270px;
+	margin-right: 30px;
+	margin: 15px;
+}
 .content-nav img {
   width: 370px;
   height: 294px;
@@ -233,6 +300,11 @@ ul {
 .futter {
   font-family: "Roboto", sans-serif;
 }
+a.futter-logo{
+	padding-top: 60px;
+	display: block;
+}
+
 .futter-logo {
   font-family: "Raleway", sans-serif;
   color: var(-wite-text-color);
@@ -246,12 +318,15 @@ ul.futter-contacts {
   line-height: 1.7;
   list-style-type: none;
   font-style: normal;
+  padding-bottom: 60px;
+  padding-top: 20px;
 }
 .section {
   background-color: var(--wite-text-color);
 }
+
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -262,5 +337,57 @@ h2.section-title {
   margin: 0;
 }
 ul.team {
+
   margin: 0;
 }
+.team{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+	padding-bottom: 94px;
+}
+.team li{
+	background-color: var(--wite-text-color);
+	margin: 15px;
+	text-align: center;
+	min-height: 368px;
+}
+.team h3{
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+.team p{
+	padding-bottom: 30px;
+}
+
+.hero {
+  background-color: var(--grey-background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 94px;
+}
+.hero-title {
+  color: var(--wite-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;l
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+  max-width: 696px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  text-align: center;
+}
+.name {
+  text-align: center;
+}
+
+-------------------------------------------------------------------------------------
+портфолио
+-------------------------------------------------------------------------------------
